@@ -4,7 +4,6 @@ var $rdf = {
   convert: require('./convert'),
   DataFactory: require('./data-factory'),
   Empty: require('./empty'),
-  Fetcher: require('./fetcher'),
   Formula: require('./formula'),
   Store: require('./store'),
   jsonParser: require('./jsonparser'),
@@ -25,7 +24,6 @@ var $rdf = {
   sparqlUpdateParser: require('./patch-parser'),
   Statement: require('./statement'),
   term: require('./node').fromValue,
-  UpdateManager: require('./update-manager'),
   UpdatesSocket: require('./updates-via').UpdatesSocket,
   UpdatesVia: require('./updates-via').UpdatesVia,
   uri: require('./uri'),
@@ -38,7 +36,6 @@ $rdf.IndexedFormula = $rdf.Store // Alias
 $rdf.NextId = $rdf.BlankNode.nextId
 
 $rdf.fromNT = $rdf.Formula.prototype.fromNT
-$rdf.fetcher = $rdf.DataFactory.fetcher
 $rdf.graph = $rdf.DataFactory.graph
 $rdf.lit = $rdf.DataFactory.lit
 $rdf.st = $rdf.DataFactory.st

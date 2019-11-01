@@ -2,7 +2,6 @@
 const BlankNode = require('./blank-node')
 const Collection = require('./collection')
 const DefaultGraph = require('./default-graph')
-const Fetcher = require('./fetcher')
 const IndexedFormula = require('./store')
 const Literal = require('./literal')
 const NamedNode = require('./named-node')
@@ -17,9 +16,6 @@ function collection (elements) {
 }
 function defaultGraph () {
   return new DefaultGraph()
-}
-function fetcher (store, options) {
-  return new Fetcher(store, options)
 }
 function graph () {
   return new IndexedFormula()
@@ -67,6 +63,5 @@ module.exports.variable = variable
 
 // rdflib only
 module.exports.collection = collection
-module.exports.fetcher = fetcher
 module.exports.lit = lit
 module.exports.st = st
