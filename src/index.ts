@@ -3,7 +3,6 @@ import Collection from './collection'
 import * as convert from './convert'
 import DataFactory from './data-factory'
 import Empty from './empty'
-import Fetcher from './fetcher'
 import Formula from './formula'
 import Store from './store'
 import jsonParser from './jsonparser'
@@ -23,7 +22,6 @@ import Serializer from './serializer'
 import SPARQLToQuery from './sparql-to-query'
 import sparqlUpdateParser from './patch-parser'
 import Statement from './statement'
-import UpdateManager from './update-manager'
 import { UpdatesSocket } from './updates-via'
 import { UpdatesVia } from './updates-via'
 import * as uri from './uri'
@@ -35,7 +33,6 @@ const NextId = BlankNode.nextId
 const { fromNT } = Formula.prototype;
 
 const {
-  fetcher,
   graph,
   lit,
   st,
@@ -56,7 +53,6 @@ export {
   convert,
   DataFactory,
   Empty,
-  Fetcher,
   Formula,
   Store,
   jsonParser,
@@ -77,7 +73,6 @@ export {
   sparqlUpdateParser,
   Statement,
   term,
-  UpdateManager,
   UpdatesSocket,
   UpdatesVia,
   uri,
@@ -89,7 +84,6 @@ export {
   NextId,
 
   fromNT,
-  fetcher,
   graph,
   lit,
   st,
